@@ -1,0 +1,16 @@
+<script>
+    function count(x)   {
+        if(x==0)
+        document.write("함수실행종료");
+        else{
+            document.write("함수 'count'가 호출될 때의 x값:" +x+"<br>");
+            count(x-1);
+        }
+    }
+</script>
+<body>
+    <h2>재귀함수(자신을 호출</h2>
+    <script>
+        count(5);
+    </script>
+</body>
