@@ -1,0 +1,12 @@
+<h2>Array Sort_(Max, Min)</h2>
+<p>The highest number is <span id="demo1"></span>.</p>
+<p>The lowest number is <span id="demo2"></span>.</p>
+<p>리터럴 배열에서 최대값은 <span id="demo3"></span>.</p>
+<p>리터럴 배열에서 최소값은 <span id="demo4"></span>.</p>
+<script>
+    document.getElementById("demo1").innerHTML = myArrayMax();
+    function myArrayMax()   {
+        return Math.max.apply(null, [40, 100, 1, 5, 25, 10]);
+    }
+    
+</script>

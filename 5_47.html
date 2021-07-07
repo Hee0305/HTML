@@ -1,0 +1,14 @@
+<body>
+    <h2>JavaScript Math.random()</h2>
+    <button onclick="random_Gen()"> try it...</button>
+    <p id="demo01"></p>
+    <p id="demo02"></p>
+<script>
+    function random_Gen()   {
+        var num = Math.random();
+        document.getElementById("demo01").innerHTML =num+"<br>";
+        var ran_Num = Math.floor(num*10)+1;
+        document.getElementById("demo02").innerHTML =ran_Num;
+    }
+</script>
+</body>

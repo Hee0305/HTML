@@ -1,0 +1,15 @@
+<body>
+    <p>Replace "java" is replaced by "javaScript".</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo01"></p>
+    <p id="demo02"></p>
+<script>
+    function myFunction()   {
+        var str = "this program is written by java. java is the best program.";
+        var txt = str.replace("java","javaScript");
+        document.getElementById("demo01").innerHTML = txt;
+        var txt = str.replace(/java/g,"javaScript");
+        document.getElementById("demo02").innerHTML = txt;
+    }
+</script>
+</body>

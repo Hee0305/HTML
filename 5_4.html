@@ -1,0 +1,18 @@
+<script>
+    function Car(model, speed, color)   {
+        this.model = model;
+        this.speed = speed;
+        this.color = color;
+        this.bbreak=function(){
+            this.speed -=10;
+        };
+        this.accel = function() {
+            this.speed +=10;
+        };
+    }
+    myCar = new Car("BMW", 100, "black");
+    yourCar = new Car("Benz", 150, "Gray");
+    document.write("내 차의 모델 : " + myCar.model + " 속도 : " + myCar.speed + " 색상 : " + myCar.color + "<br>");
+    yourCar.accel();
+    document.write("당신 차의 모델 : " + yourCar.model + " 속도 : " + yourCar.speed + " 색상 : " + yourCar.color);
+</script>

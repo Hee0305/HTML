@@ -1,0 +1,17 @@
+<script>
+    function Car(model, speed, color)    {
+        this.mode = model;
+        this.speed = speed;
+        this.color = color;
+        this.bbreak = function()    {
+            this.speed -=10;
+        };
+        this.accel =function()  {
+        this.speed +=10;
+        };
+    }
+    myCar = new Car("BMW", 100, "black");
+    for(var i in myCar) {
+        document.write(i + ":" + myCar[i] + "<br>");
+    }
+</script>
