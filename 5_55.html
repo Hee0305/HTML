@@ -1,0 +1,16 @@
+<body>
+    <p>The best program is javaScript and HTML5...!</p>
+<script>
+    var str = "The best program is javascript and HTML5...!";
+    var ptn01=/javascript/ig;
+    document.write(str.match(ptn01)+"<br>");
+    var ptn02=/[prjava]/ig;
+    document.write(str.match(ptn02)+"<br>");
+    var ptn03=/[A-K]/ig;
+    document.write(str.match(ptn03)+"<br>");
+    var ptn04=/[0-9]/ig;
+    document.write(str.match(ptn04)+"<br>");
+    var ptn05=/p|x|z/ig;
+    document.write(str.match(ptn05)+"<br>");
+</script>
+</body>

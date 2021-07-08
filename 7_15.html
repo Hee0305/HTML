@@ -1,0 +1,15 @@
+<body>
+    <p> create a P element with some text, and append it to DIV.</p>
+    <div id="myDIV">
+        First statement.....
+    </div>
+    <button onclick="myFunction()">Try it</button>
+<script>
+    function myFunction() {
+        var para = document.createElement("P");
+        var t = document.createTextNode("Added Statements....");
+        para.appendChild(t);
+        document.getElementById("myDIV").appendChild(para);
+    }
+</script>
+</body>

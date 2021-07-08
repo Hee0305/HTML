@@ -1,0 +1,14 @@
+<body>
+    <p>Search and Replace method in RegExp...</p>
+<script>
+    var str = "Hello JavaScript Program...!";
+    var regexp_search = str.search(/javascript/i);
+    document.write(regexp_search  + "<br>");
+    var string_search = str.search("javascript");
+    document.write(string_search + "<br>");
+    var regexp_replace = str.replace(/javascript/i,"HTML5");
+    document.write(regexp_replace + "<br>");
+    var string_replace = str.replace("javascript","HTML5");
+    document.write(string_replace);
+</script>
+</body>
