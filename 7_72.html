@@ -1,0 +1,21 @@
+<body>
+    <script>
+        function checkEmpty(){
+            var x;
+            var exp = /^\d{4}\/\d{1,2}\/\d{1,2}/;
+            var val=document.getElementById("check").value;
+            if(val.match(exp)) {
+                x="OK...!";
+            }
+            else {
+                x="오류...!";
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+    <form>
+        name : <input type="text" id="check" />
+        <input type="button" onclick="checkEmpty()" value="유효성검사" />
+    </form>
+    <p id="demo"></p>
+</body>

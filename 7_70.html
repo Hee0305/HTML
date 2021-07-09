@@ -1,0 +1,14 @@
+<script>
+    function checkEmpty(min, max){
+        var cont=document.getElementById('check');
+        if(cont.value.length <= min || cont.value.length >= max)
+            document.getElementById("demo").innerHTML="기본 자릿수를 벗어났습니다...!"
+    }
+</script>
+<body>
+    <form>
+        name : <input type="text" id="check" />
+        <input type="button" onclick="checkEmpty(6, 15)" value="id 자릿수 확인" />
+    </form>
+    <p id="demo"></p>
+</body>

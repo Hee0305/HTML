@@ -1,0 +1,14 @@
+<body>
+    <ul id="myList"><li>Coffe</li><li>Tea</li><li>Milk</li></ul>
+    <p>Append an item to the end of the list.</p>
+    <button onclick="appendFunction()">Try it</button>
+
+<script>
+    function appendFunction() {
+        var node = document.createElement("li");
+        var textnode = document.createTextNode("water");
+        node.appendChild(textnode);
+        document.getElementById("myList").appendChild(node);
+    }
+</script>
+</body>

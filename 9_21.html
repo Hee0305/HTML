@@ -1,0 +1,26 @@
+<script src="./web/JQ/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#only-child").click(function(){
+            $("p:only-child").css("background-color", "yellow");
+        })
+        $("only-of-type").click(function(){
+            $("p:only-of-type").css("background-color", "yellow");
+        });
+    });
+</script>
+<body>
+    <div style="border:1px solid;">
+    <p>The first child.</p>
+    <p>The last child.</p>
+    </div><br>
+    <div style="border:1px solid;">
+    <p>The only child.</p>
+    </div><br>
+    <div style="border:1px solid;">
+    <span>The first child.</span>
+    <p>The last child.</p>
+    </div><br>
+    <button id="only-child">only-child</button>
+    <button id="only-of-type">only-of-type</button>
+</body>

@@ -1,0 +1,30 @@
+<script src="./web/JQ/jquery-3.6.0.min.js"></script>
+<style>
+.test * {
+    display: block;
+    border: 2px solid orange;
+    color: blue;
+    padding: 5px;
+    margin: 15px;
+}
+</style>
+<body>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("div > p").css({"color": "green", "border": "2px solid green"});
+            });
+        });
+    </script>
+    <div class="test">
+        <a href="#"> a1 Tag</a>
+        <p>p (child)
+            <span>span 1</span>
+            <a href="#"> a2 Tag </a>
+        </p>
+        <p>p (child)
+            <span>span 2</span>
+        </p>
+    </div>
+    <button>Click me</button>
+</body>
