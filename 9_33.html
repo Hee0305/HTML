@@ -1,0 +1,25 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#submit").click(function(){
+            $(":submit").css("background-color", "red");
+        });
+        $("#reset").click(function(){
+            $(":reset").css("background-color", "red");
+        })
+    })
+</script>
+<body>
+    <form action="">
+        Name: <input type="text" name="user"><br>
+        Password: <input type="reset" name="reset"><br>
+        <button type="button">Useless Button</button>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit"><br>
+    </form>
+    <button id="submit">submit Test</button>
+    <button id="reset">Password Test</button>
+</body>
+
+
+

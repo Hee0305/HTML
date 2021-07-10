@@ -1,0 +1,19 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("input").select(function(){
+            alert("Text marked!");
+        })
+    })
+</script>
+<script>
+    $(document).ready(function(){
+        $("input").change(function(){
+            alert("Text changed!");
+        })
+    })
+</script>
+<body>
+    <h2>Change method test...</h2>
+    <input type="text" value="Hello World">
+</body>

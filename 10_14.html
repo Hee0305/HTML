@@ -1,0 +1,20 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    var x=0;
+    $(document).ready(function(){
+        $("div").scroll(function(){
+            $("span").text( x+= 1);
+        })
+    })
+</script>
+<body>
+    <p>Try the scrollbar in the div</p>
+    <div style="border:1px solid black;width:200px;height:100px;overflow:scroll;">
+    All the different visitor's actions that a web page can respond to are called events.
+    An event represents the precise moment when something happens.
+    <br><br>
+    'Whenver you feel like criticizing anyone,' he told me, just remember that
+    all the people ini this world haven't had the advantages that you've had.'
+    </div>
+    <p>Scrolled <span>0</span>times.</p>
+</body>

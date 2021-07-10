@@ -1,0 +1,15 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("input").select(function(){
+            $("input").after(" Text marked!");
+        });
+        $("button").click(function(){
+            $("input").trigger("select");
+        })
+    })
+</script>
+<body>
+    <input type="text" value="Hello World"><br><br>
+    <button>Trigger test</button>
+</body>

@@ -1,0 +1,17 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#orange").click(function(){
+            $("p[name~='nation']").css("background-color", "orange");
+        });
+    });
+</script>
+<body>
+    <p title="Tomorrow" name="nationality">This is a paragraph.</p>
+    <p title="tomorrow" name="nation" value="English">This is a paragraph.</p>
+    <p title="Tom">This is a paragraph with wikipedia.org</p>
+    <p title="See You Tomorrow">This is a paragraph.</p>
+    <a href="http://www.google.com">Google.com</a><br>
+    <a href="http://www.wikipedia.org">wikipedia.org</a><br/>
+    <button id="orange">orange</button>
+</body>

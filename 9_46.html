@@ -1,0 +1,19 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#hidden").click(function(){
+            $("p:hidden").show(3500);
+        })
+        $("#visible").click(function(){
+            $("p:visible").css("background-color", "yellow");
+        })
+    })
+</script>
+<body>
+    <h2>This is a heading</h2>
+    <p>This is a paragraph</p>
+    <p>This is another paragraph.</p>
+    <p style="display:none">This is a hidden paragraph.</p>
+    <button id="hidden">hidden</button>
+    <button id="visible">visible</button>
+</body>

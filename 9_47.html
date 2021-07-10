@@ -1,0 +1,17 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).readdy(function(){
+        $("#lang").click(function(){
+            $("p:lang(it)").css("background-color","red");
+        });
+        $("#root").click(function(){
+            $(":root").css("background-color","yellow");
+        });
+    });
+</script>
+<body>
+    <p>I live in Italy.</p>
+    <p lang="it">Ciao bella!</p>
+    <button id="lang">lang</button>
+    <button di="root">root</button>
+</body>

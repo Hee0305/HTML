@@ -1,0 +1,23 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    function changeFontColor() {
+        $(this).css("color", "green");;
+    }
+    function changeBackgroundColor() {
+        $(this).css("background-color", "orange");
+    }
+    $(document).ready(function(){
+        $("body").on("click", "p", changeFontColor);
+        $("body").on("click", "p", changeBackgroundColor);
+        $("button").click(function(){
+            $("body").off("click", changeFontColor);
+        })
+    })
+</script>
+<body>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph</p>
+    <p>Click any p element to increase size and letterspacing.</p>
+    <button>Remove all click event handlers</button>
+
+</body>

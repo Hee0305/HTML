@@ -1,0 +1,22 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#is").click(function(){
+            $("[id=choose]").css("background-color", "yellow");
+        })
+        $("#is_not").click(function(){
+            $("p[class!='intro']").css("background-color", "red");
+        });
+    });
+</script>
+<body>
+    <p class="intro">I live in Italy.</p>
+    <p lang="it">Ciao bella!</lang>
+    <ul id="choose">
+        <li>Goofy</li>
+        <li>Mickey</li>
+        <li>Pluto</li>
+    </ul>
+    <button id="is">태그와 값이 같음</button>
+    <button id="is_not">태그와 값이 다름</button>
+</body>

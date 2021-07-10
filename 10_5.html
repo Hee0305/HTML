@@ -1,0 +1,11 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(document).mousemove(function(event){
+            $("span").text(event.pageX + ", " + event.pageY);
+        })
+    })
+</script>
+<body>
+    <p>Mouse is at coordinates: <span></span></p>
+</body>

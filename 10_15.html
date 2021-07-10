@@ -1,0 +1,17 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<style>
+    .intro{
+        font-size: 150%;
+        color: red;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+       $("p").on("mouseover mouseout", function(){
+           $(this).toggleClass("intro");
+       }) 
+    })
+</script>
+<body>
+    <p>Move the mouse pointer over this paragraph.</p>
+</body>

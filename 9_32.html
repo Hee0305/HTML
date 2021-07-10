@@ -1,0 +1,25 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#radio").click(function(){
+            $(":radio").wrap("<span style='background-color:red'>");
+        });
+        $("#checkbox").click(function(){
+            $(":checkbox").wrap("<span style='background-color:red'>");
+        });
+    });
+</script>
+<body>
+    <form action="">
+        Name: <input type="text" name="user"><br>
+        Male:<input type="radio" name="sex" value="m"><br>
+        Female<input type="radio" name="sex" value="f"><br>
+        I have a bike: <input type="checkbox" name="vehicle" value="Bike"><br>
+        I have a car: <input type="checkbox" name="vehicle" value="Car"><br>
+        I have an airplane: <input type="checkbox" name="vehicle" value="Airplane"><br>
+        <input type="submit">
+    </form>
+    <button id="radio">radio Test</button>
+    <button id="checkbox">checkbox Test</button>
+    
+</body>
