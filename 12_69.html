@@ -1,0 +1,25 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<style>
+    .grandparent {
+        display: block; border: 2px solid orange;
+        width:70%; position:absolute; left:10px; top:50px;
+    }
+    .parent {
+        border:1px solid black; margin:10px; background-color:yellow;
+    }
+</style>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").offsetParent().css("background-color", "red");
+        })
+    })
+</script>
+<body>
+    <button>Set background-color</button>
+    <div class="grandparent">div (grandparent)
+        <div class="parent">div (parent)
+        <p> offsetParent method...</p>
+    </div>
+</div>
+</body>

@@ -1,0 +1,16 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#button").click(function(){
+            if($("p").parent().is("div")) {
+                $("#demo").text("Parent of p is div");
+            }
+        })
+    })
+    </script>
+    <body>
+        <div>
+            <p id="button">Click me.</p>
+        </div>
+        <p id="demo"></p>
+    </body>

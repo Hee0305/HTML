@@ -1,0 +1,18 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var treeTraversal=$("span").parents().map(function(){
+                return this.tagName;}).get().join(", ");
+                $("span").after("<h2>" + treeTraversal + "<h2>");
+            })
+        })
+</script>
+<body>
+    <div>
+        <p>
+            <span>This is is a span element. My ancestors are:</span>
+        </p>
+    </div>
+    <button>Add classes to elements</button>
+</body>

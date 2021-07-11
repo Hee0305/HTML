@@ -1,0 +1,19 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("p").filter(function(){
+            return $("span", this).length == 2;}).css("background-color", "yellow");
+        })
+</script>
+<body>
+    <div>
+        <p>A p element <span>with one span element.</span></p>
+        <p>A p element <span>with</span>tow <span>span element.</span></p>
+        <p>A p element <span>with one span element.</span></p>
+        <p>A p element <span>with</span>tow <span>span element.</span></p>
+        <p>A p element with no span element.</p>
+
+
+    </div>
+    <p>This example returns all p elements.</p>
+</body>

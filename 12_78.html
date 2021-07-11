@@ -1,0 +1,25 @@
+<style>
+    .descendants * {
+        display: block;
+        border: 2px solid orange;
+        color: blue;
+        padding: 5px;
+        margin: 15px;
+    }
+    </style>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("html").find("*").css({"color": "red", "border": "2px solid green"})
+        })
+    </script>
+    <body>
+        <div class="descendants" style="width:500px;">div (current element)
+        <p class="first">p (child)
+            <span>span (grandchild)</span>
+        </p>
+        <p class="second">p (child)
+            <span>span (grandchild)</span>
+        </p></div>
+        
+    </body>

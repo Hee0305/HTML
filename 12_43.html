@@ -1,0 +1,21 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#add").click(function(){
+            $("p").toggleClass("main",true);
+        })
+        $("#remove").click(function(){
+            $("p").toggleClass("main",false);
+        })
+    })
+</script>
+<style>
+    .main { font-size: 120%;
+    color: red;}
+</style>
+<body>
+    <p>This is a paragraph.</p>
+    <P class="main">This is another paragraph.</P>
+    <button id="add">Add class "main"</button>
+    <button id="remove">Remove class "main</button>
+</body>

@@ -1,0 +1,14 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("div").next("p").css("background-color", "yellow");
+    });
+</script>
+<body>
+    <h1>What will $("div").next("p") select?</h1>
+    <div style="border:1px solid black;padding:10px;">This is a div element.</div>
+    <p>This p element is the next sibling element of a div element.</p>
+    <p>This is another p element.</p>
+    <div style="border:1px solid black;padding:10px;">
+        <p>This is a p element inside a div element.</p>
+    </body>
