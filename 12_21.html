@@ -1,0 +1,14 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    function appendText() {
+        var txt1 = "<b>I </b>";
+        var txt2 = $("<i></i>").text("love ");
+        var txt3 = document.createElement("b");
+        txt3.innerHTML = "jQuery!";
+        $("body").append(txt1, txt2, txt3);
+    }
+</script>
+<body>
+    <p>Click the button to insert text after the image.</p>
+    <button onclick="appendText()">Insert after</button>
+</body>

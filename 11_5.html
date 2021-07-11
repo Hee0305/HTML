@@ -1,0 +1,17 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var div = $("#hydrangeas");
+            div.animate({height: '300px', opacity:'0.4'}, "slow");
+            div.animate({width: '400px', opacity:'0.8'}, "slow");
+            div.animate({width: '300px', opacity:'0.4'}, "slow");
+            div.animate({height: '300px', opacity:'0.8'}, "slow");
+        })
+    })
+</script>
+<body>
+    <button>Start Animation</button><br><br>
+    <img id="hydrangeas" src="./web/Simg.png" alt="hydrangeas"
+    width="300" height="200" style="position:absolute" />
+</body>

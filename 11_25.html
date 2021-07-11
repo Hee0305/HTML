@@ -1,0 +1,19 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#slidedown").click(function(){
+            $("#hydrangeas").slideDown("slow");
+        })
+        $("#slideup").click(function(){
+            $("#hydrangeas").slideUp("slow");
+        })
+    })
+</script>
+<body>
+    <h3> Show...hydrangeas</h3>
+    <button id="slidedown">Show Flower..!</button>
+    <button id="slideup">Hide Flower..!</button><br><br>
+    <img id="hydrangeas" src="./web/Simg.png" alt="hydrangeas" width="300" height="200" style="display:none" />
+
+</body>
+

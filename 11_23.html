@@ -1,0 +1,17 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#fadein").click(function(){
+            $("#penguins").fadeIn("slow");
+        }),
+        $("#fadeout").click(function(){
+            $("#penguins").fadeOut(1000);
+        })
+    })
+</script>
+<body>
+    <h3> Penguins fade In/out</h3>
+    <button id="fadein">Click to fade in</button><br><br>
+    <button id="fadeout">Click to fade out</button><br><br>
+    <img id="penguins" src="./web/Simg.png" lat="Penguins" width="300" height="200" style="display:none" />
+</body>

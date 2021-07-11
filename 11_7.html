@@ -1,0 +1,20 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn1").click(function(){
+            $("#p1").animate({borderWidth:"+=10px"});
+        });
+        $(".btn2").click(function(){
+            $("#p1").animate({borderWidth:"-=10px"}); 
+        });
+    });
+    
+</script>
+<body>
+    <p style="border:1px solid black">This is a paragraph.</p>
+    <button id="show">slideDown Animation</button>
+    <button id="stop">Stop Animation</button><br><br> 
+    
+</body>
+
+책임틀림2 ㅅㄱ

@@ -1,0 +1,18 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn01").click(function(){
+            $("h1").appendTo("p");
+        })
+        $("#btn02").click(function(){
+            $("h1").prependTo("p");
+        })
+    })
+</script>
+<body>
+    <button id="btn01">Insert after element</button>
+    <button id="btn02">Insert before element</button>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph</p>
+    <p>This is another paragraph</p>
+</body>

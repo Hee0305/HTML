@@ -1,0 +1,15 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            newPos = new Object();
+            newPos.left = "100";
+            newPos.top = "100";
+            $("p").offset(newPos);
+        })
+    })
+</script>
+<body>
+    <p>This is a paragraph.</p>
+    <button>Using an object</button>
+</body>

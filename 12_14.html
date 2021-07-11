@@ -1,0 +1,17 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p").offsetParent().css("background-color", "red");
+        })
+    })
+</script>
+<body>
+    <button>Set background-color</button>
+    <div style="border:1px solid balck; width:70%; position:absolute; left:10px; top:50px">
+    <div style="border:1px solid black; margin:50px; background-color:yellow">
+        <p>Click button to set the background color of the first parent</p>
+    </div>
+    
+    </div>
+</body>

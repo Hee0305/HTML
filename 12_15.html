@@ -1,0 +1,24 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(window).scroll(function() {
+            if($(document).scrollTop() > 50) {
+                $("p").addClass("test");
+            } else {
+                $("p").removeClass("test");
+            }
+        })
+    })
+</script>
+<style>
+    .test {
+        background-color: yellow;
+    }
+</style>
+<body style="height:500px;">
+<p>Scroll down this page</p>
+<p style="position:fixed;">When you have scrolled 50 pixels from the top, 
+    add the class "test" (yellow background color) to paragrap. 
+    Scroll up again to remove the class.</p>
+
+</body>

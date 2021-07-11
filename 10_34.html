@@ -1,0 +1,14 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("p, button, h1").click(function(event){
+            $("div").html("Triggered by a " + event.target.nodeName + "element.");
+        })
+    })
+</script>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph</p>
+    <button>This is a button</button>
+    <div style="color:blue;"></div>
+</body>

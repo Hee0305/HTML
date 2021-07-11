@@ -1,0 +1,12 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){   
+            $(document).mousemove(function(event){
+                $("span").text("X: " + event.pageX + ", Y: " + event.pageY);
+            })
+        })
+   
+</script>
+<body>
+    <p>The mouse pointer position is at: <span></span></p>
+</body> 

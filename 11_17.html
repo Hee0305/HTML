@@ -1,0 +1,12 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("div").animate({height: "100px"});
+        $("div").animate({width: "100px"});
+        $("div").delay(1200).animate({height: "150px"});
+    });
+</script>
+<body>
+    <div style="background:purple;height:75px;width:75px;margin:6px;"></div>
+    <p><button id="btn1">Animate</button></p>
+</body>

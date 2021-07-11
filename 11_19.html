@@ -1,0 +1,22 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var div=$("div");
+        $("#start").click(function(){
+            div.animate({height: 300}, "slow");
+            div.animate({width: 300}, "slow");
+            div.animate({height: 100}, "slow");
+            div.animate({width: 100}, "slow");
+        })
+        $("#stop").click(function(){
+            div.stop();
+        })
+    })
+</script>
+<body>
+    <p>
+        <button id="start">Start Animation</button>
+        <button id="stop">Stop All Queued Animations</button>
+    </p>
+    <div style="background:#98bf21;height:100px;width:100px"></div>
+</body>

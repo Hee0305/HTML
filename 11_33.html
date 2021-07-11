@@ -1,0 +1,14 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#hydrangeas").show(1000)
+            .slideUp(2000)
+            .slideDown(2000);
+        })
+    })
+</script>
+<body>
+    <button>Click me</button><br>
+    <img id="hydrangeas" src="./web/Simg.png" alt="hydrangeas" width="300" height="200" style="display:none" />
+</body> 

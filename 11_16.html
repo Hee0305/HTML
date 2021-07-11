@@ -1,0 +1,18 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".btn1").click(function(){
+            $("p").animate({lineHeight: "+=10px"});
+        })
+        $(".btn2").click(function(){
+            $("p").animate({textIndent: "30px"});
+        })
+    })
+</script>
+<body>
+    <button class="btn1">lineHeight +</button>
+    <button class="btn2">textIndent +</button>
+    <p style="line-height:lem;">This is a paragraph.<br />
+    THis is first sentence. <br />This is second sentence.</p>
+</body>
+

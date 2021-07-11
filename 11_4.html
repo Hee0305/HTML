@@ -1,0 +1,13 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("#hydrangeas").animate({width : 'toggle'});
+        })
+    })
+</script>
+<body>
+    <button>Start Animation</button><br><br>
+    <img id="hydrangeas" src="./web/Simg.png" alt="hydrangeas"
+    width="300" height="200" style="position:absolute" />
+</body>

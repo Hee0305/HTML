@@ -1,0 +1,28 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("p:last").removeClass("intro").addClass("main");
+               
+            })
+        })
+</script>
+<style>
+    .intro {
+        color: red;
+    }
+    .main {
+        background-color: yellow;
+    }
+</style>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph</p>
+    <p>THis is another paragraph.</p>
+    <button>Add two class names to the first p element</button>
+</body>
+
+
+
+
+

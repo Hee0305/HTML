@@ -1,0 +1,17 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#show").click(function(){
+            $("#penguins").slideDown(5000);
+        })
+        $("#stop").click(function(){
+            $("#penguins").stop();
+        })
+    })
+</script>
+<body>
+    <button id="show">slideDown Animation</button>
+    <button id="stop">Stop Animation</button><br><br>
+    <img id="penguins" src="./web/Simg.png" alt="penguins"
+    width="300" height="200" style="display:none" />
+</body>

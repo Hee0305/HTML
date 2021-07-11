@@ -1,0 +1,12 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(event){
+            $("span").text("milliseconds after January 1, 1970. : " + event.timeStamp);
+        })
+    })
+</script>
+<body>
+    <p><span style="color:red">unknown</span></p>
+    <button>Click me</button>
+</body>

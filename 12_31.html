@@ -1,0 +1,13 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            $("body").append($("p:first").clone(true));
+        })
+    })
+</script>
+<body>
+    <p>Click this paragraph to increase text size.</p>
+    <p>This is another paragraph.</p>
+    <button>Copy the first p element</button>
+</body>

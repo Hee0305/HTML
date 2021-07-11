@@ -1,0 +1,14 @@
+<script src="./jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var x= $("p").position();
+            $("#demo").text("Top position: " + x.top + " Left position:" + x.left);
+        })
+    })
+</script>
+<body>
+    <p>This is a paragraph</p>
+    <button>position of P tag</button>
+    <p id="demo"></p>
+</body>
